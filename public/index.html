@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Triad Widget Demo</title>
+    <!--
+      This demo page mounts the custom <triad-widget> element and
+      includes the compiled bundle. When deployed via the GitHub
+      Pages workflow defined in .github/workflows/deploy.yml, both
+      this HTML and the triad-widget.js bundle are published under
+      the same folder, so the relative path below resolves correctly.
+    -->
+  </head>
+  <body>
+    <h1 style="text-align:center; font-family:sans-serif;">Triad Widget Demo</h1>
+    <div style="max-width:500px; margin:1rem auto;">
+      <triad-widget></triad-widget>
+    </div>
+    <script src="./triad-widget.js"></script>
+  </body>
+</html>
