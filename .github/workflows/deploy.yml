@@ -21,7 +21,7 @@ jobs:
       - run: npm run build
       # Copy the built widget into the public directory so it’s served by Pages
       - run: cp dist/triad-widget.js public/triad-widget.js
-      - uses: actions/upload-pages-artifact@v1
+      - uses: actions/upload-pages-artifact@v2
         with:
           path: public
-      - uses: actions/deploy-pages@v1
+      - uses: actions/deploy-pages@v3
